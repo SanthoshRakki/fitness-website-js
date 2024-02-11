@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#nutrition">Nutritional Content</a>
+        <a href="#exercises">Exercises</a>
+        <a href="#workout">Fitness Workout</a>
+    </div>
+
+    <section id="home">
+        <div class="container-for-home" id="HomeSection">
+            <h1>Welcome to our Health and Fitness Website!</h1>
+            <p>Explore nutritional information and workout plans to stay healthy and fit.</p>
+
+        </div>
+    </section>
+
+    <section id="nutrition">
+        <div class="container-for-nutrition" id="NutritionSection">
+            <div class="Nutrition">
+                <h1><span>Nutrional Information</span></h1>
+            </div>
+            <h1 id="Protein"><span>Proteins</span></h1>
+            <div class="excel-sheet-Pro">
+            </div>
+            <h1 id="Carbo"><span>Carbohydrates</span></h1>
+            <div class="excel-sheet-Carbo">
+
+            </div>
+            <h1 id="Fat"><span>Fat</span></h1>
+            <div class="excel-sheet-Fat">
+
+            </div>
+            <h1 id="Fiber"><span>Fiber</span></h1>
+            <div class="excel-sheet-Fiber">
+
+            </div>
+            <h1 id="Vitamin"><span>Vitamins</span></h1>
+            <div class="excel-sheet-Vitamin">
+
+            </div>
+            <h1 id="Mineral"><span>Minerals</span></h1>
+            <div class="excel-sheet-Mineral">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="exercises">
+        <div class="container-for-exercises">
+            <h1>Specific Exercises</h1>
+
+            <div class="specificExercises">
+                <div class="exercises">
+                    <h2 id="chest"><span>Chest</span></h2>
+                    <h2 id="back"><span>Back</span></h2>
+                    <h2 id="legs"><span>legs</span></h2>
+                    <h2 id="Shoulders"><span>Shoulders</span></h2>
+                    <h2 id="Arms"><span></span>Arms</h2>
+                    <h2 id="core"><span>core</span></h2>
+                    <h2 id="Cardiovascular"><span>Cardiovascular Exercises</span></h2>
+                    <h2 id="fullBody"><span>Full Body</span></h2>
+
+                </div>
+                <div>
+                    <div class="stopWatch">
+                        <div class="startStop">
+                            <button id="startStopBtn">Start</button>
+                            <button id="resetBtn">Reset</button>
+                        </div>
+
+                        <div id="display">00:00:00</div>
+                    </div>
+
+                    <div class="note-container">
+                        <!-- <h1><img src="images/notes.png">Notes</h1> -->
+                        <button class="btn"><img src="images/edit.png">Target notes</button>
+                        <div class="notes-container">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="workout">
+        <div class="container-for-Fitness" id="WorkoutSection">
+            <h1>Fitness Workout Plans</h1>
+            <p>Find the perfect workout plan to achieve your fitness goals.</p>
+            <div class="formContainer">
+                <div class="experience-form">
+                    <form>
+                        <label for="weight">Weight(KG):</label>
+                        <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+                        <label for="height">Height(CM):</label>
+                        <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                        <label for="level">Level:</label>
+                        <select id="level" name="level">
+                            <option value="beginner">Beginner</option>
+                            <option value="advance">Advance</option>
+                            <option value="pro">Pro</option>
+                        </select>
+
+                        <label for="goal">Gain/Loss:</label>
+                        <select id="goal" name="goal">
+                            <option value="gain">Gain</option>
+                            <option value="loss">Loss</option>
+                        </select>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="bmiValue">
+
+                </div>
+
+            </div>
+
+            <div class="data">
+                <div class="initialPlan">
+
+                </div>
+                <div class="PostPlan">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
